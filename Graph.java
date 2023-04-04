@@ -71,11 +71,111 @@ public class Graph {
 
     } //end addEdgeByName
 
-
     public void deleteEdge(int initialNode, int disconnectedTo) {
         adjacencyMatrix[initialNode][disconnectedTo] = Double.POSITIVE_INFINITY;
     } //end deleteEdge
 
+    public double[][] findMinimumPaths (String node) {
+
+        //get the node we will calculate its minimum paths
+        boolean found = false;
+        int position = 0;
+        int initialNode = 0;
+        for (int i = 0; i<numberOfNodes && !found; i++) {
+            if (nodes[i].equals(node)) {
+                position = i;
+                initialNode = i;
+                found = true;
+            } //end if
+        } //end for
+
+        //initialize the matrix we will work in
+        double[][] dijkstraResult;
+        dijkstraResult =  new double[numberOfNodes][3];
+        for (int i = 0; i<numberOfNodes;i++) {
+            dijkstraResult[i][0] = i;
+            dijkstraResult[i][1] = Double.POSITIVE_INFINITY;
+            dijkstraResult[i][2] = Double.NEGATIVE_INFINITY;
+        } //end for
+        dijkstraResult[position][1] = 0;
+
+        //initialize array containing already visited nodes
+        int[] visitedNodes;
+        int positionOfVisitedNodes = 1;
+        visitedNodes = new int[numberOfNodes];
+        visitedNodes[0] = position;
+        for (int x = 1; x<numberOfNodes;x++) {
+            visitedNodes[x] = -1;
+        } //end for
+
+        //initialize array containing not visited nodes
+        int[] notVisitedNodes;
+        notVisitedNodes = new int[numberOfNodes];
+        for (int x = 0; x<numberOfNodes;x++) {
+            if (x==position) {
+                notVisitedNodes[x] = -1;
+            } //end if
+            else {
+                notVisitedNodes[x] = x;
+            } //end else
+        } //end for
+
+        //DIJKSTRA'S ALGORITHM
+        while (positionOfVisitedNodes!=numberOfNodes) {
+
+            //establish the new distances comparing if the previous ones are greater
+            for (int i = 0; i<numberOfNodes; i++) {
+                //if the previous is greater update the shortest distance and the previous node
+                if ((dijkstraResult[position][1] + adjacencyMatrix[position][i])<dijkstraResult[i][1]) {
+                    dijkstraResult[i][1] = dijkstraResult[position][1] + adjacencyMatrix[position][i];
+                    dijkstraResult[i][2] = position;
+                } //end if
+            } //end for
+
+            //get the minimum path for the next node
+            double minimum = Double.POSITIVE_INFINITY;
+            int minimumPosition = notVisitedNodes[0];
+            for (int i = 0; i<numberOfNodes;i++) {
+                if (notVisitedNodes[i]!=-1) {
+                    if (adjacencyMatrix[position][notVisitedNodes[i]]<minimum) {
+                        minimum = adjacencyMatrix[position][notVisitedNodes[i]];
+                        minimumPosition = notVisitedNodes[i];
+                    } //end if
+                } //end if
+            } //end for
+
+            //update not visited and visited nodes arrays
+            notVisitedNodes[minimumPosition] = -1;
+            visitedNodes[positionOfVisitedNodes] = minimumPosition;
+            positionOfVisitedNodes++;
+
+            //change position to start analyzing in the following iteration from that node
+            position = minimumPosition;
+
+        } //end while
+
+        TransformAndPrintDijkstrasResult(dijkstraResult,node, initialNode);
+        return dijkstraResult;
+    } //end findMinimumPaths
+
+    public void TransformAndPrintDijkstrasResult (double[][] dijkstraResult, String node, int initialNode) {
+        System.out.println("For node " + node + " the shortest paths are");
+        System.out.printf("%-8S\t%-8S\t%-8S\n", "Node", "Weight", "Path");
+        for (int i = 0; i<numberOfNodes; i++) {
+            for (int j = 0; j<3;j++) {
+                if (j==0) {
+                    System.out.printf("%-8S\t",nodes[i]);
+                } //end if
+                if (j==1) {
+                    System.out.printf("%-2f\t", dijkstraResult[i][j]);
+                } //end if
+                if (j==2 && i!=initialNode) {
+                    System.out.printf("%-8s\t", nodes[(int)dijkstraResult[i][j]]);
+                } //end if
+            } //end for
+            System.out.println(" ");
+        } //end for
+    }
     public void showGraph() {
         for (int i = 0; i<numberOfNodes;i++) {
             System.out.printf("Connections for %-4s ", nodes[i]);
