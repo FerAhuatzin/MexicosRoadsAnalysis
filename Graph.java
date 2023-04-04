@@ -31,7 +31,7 @@ public class Graph {
 
     public void addNodeName (String name) {
 
-        if (filledNodes!=(numberOfNodes-1)){
+        if (filledNodes!=(numberOfNodes)){
             nodes[filledNodes] = name;
             filledNodes++;
         } //end if
@@ -44,6 +44,28 @@ public class Graph {
     public void addEdge(int initialNode, int connectedTo, double weight) {
         adjacencyMatrix[initialNode][connectedTo] = weight;
     } //end addEdge
+
+
+    public void addEdgeByName(String initialNode, String connectedTo, double weight) {
+        int x = 0;
+        int y = 0;
+        boolean found1 = false;
+        boolean found2 = false;
+        for (int i = 0; i<numberOfNodes && (!found1 || !found2);i++) {
+            if (nodes[i].equals(initialNode)) {
+                x = i;
+                found1 = true;
+            } //end if
+            if (nodes[i].equals(connectedTo)) {
+                y = i;
+                found2 = true;
+            } //end if
+        } //end for
+        adjacencyMatrix[x][y]=weight;
+        adjacencyMatrix[y][x]=weight;
+
+    } //end addEdgeByName
+
 
     public void deleteEdge(int initialNode, int disconnectedTo) {
         adjacencyMatrix[initialNode][disconnectedTo] = Double.POSITIVE_INFINITY;
