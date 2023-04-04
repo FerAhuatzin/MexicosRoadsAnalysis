@@ -26,6 +26,8 @@ public class Main {
        mexicosDistances.addNodeName("MY");
        mexicosDistances.addNodeName("MZ");
        mexicosDistances.addNodeName("OX");
+       mexicosDistances.addNodeName("PB");
+       mexicosDistances.addNodeName("PC");
        mexicosDistances.showGraph();
     }
 }
