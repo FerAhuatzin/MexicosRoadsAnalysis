@@ -13,6 +13,16 @@ public class Main {
        mexicosDistances.addNodeName("CP");
        mexicosDistances.addNodeName("CV");
        mexicosDistances.addNodeName("DG");
+       mexicosDistances.addNodeName("GT");
+       mexicosDistances.addNodeName("HS");
+       mexicosDistances.addNodeName("LC");
+       mexicosDistances.addNodeName("LP");
+       mexicosDistances.addNodeName("MA");
+       mexicosDistances.addNodeName("MD");
+       mexicosDistances.addNodeName("ML");
+       mexicosDistances.addNodeName("MX");
+       mexicosDistances.addNodeName("MY");
+       mexicosDistances.addNodeName("MZ");
        mexicosDistances.showGraph();
     }
 }
