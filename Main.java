@@ -29,6 +29,7 @@ public class Main {
        mexicosDistances.addNodeName("MZ");
        mexicosDistances.addNodeName("OX");
        mexicosDistances.addNodeName("PB");
+       mexicosDistances.addNodeName("PC");
        mexicosDistances.addNodeName("QR");
        mexicosDistances.addNodeName("SP");
        mexicosDistances.addNodeName("ST");
@@ -67,12 +68,12 @@ public class Main {
        mexicosDistances.addEdgeByName("CN","HS",699.0);
        mexicosDistances.addEdgeByName("CN","CH",750.0);
 
-       mexicosDistances.addEdgeByName("C0","CV",186.0);
-       mexicosDistances.addEdgeByName("C0","PB",395.0);
-       mexicosDistances.addEdgeByName("C0","OX",686.0);
-       mexicosDistances.addEdgeByName("C0","TC",268.0);
-       mexicosDistances.addEdgeByName("C0","MA",542.0);
-       mexicosDistances.addEdgeByName("C0","LC",428.0);
+       mexicosDistances.addEdgeByName("CO","CV",186.0);
+       mexicosDistances.addEdgeByName("CO","PB",395.0);
+       mexicosDistances.addEdgeByName("CO","OX",686.0);
+       mexicosDistances.addEdgeByName("CO","TC",268.0);
+       mexicosDistances.addEdgeByName("CO","MA",542.0);
+       mexicosDistances.addEdgeByName("CO","LC",428.0);
 
        mexicosDistances.addEdgeByName("CP","MD",177.0);
        mexicosDistances.addEdgeByName("CP","CL",418.0);
@@ -81,7 +82,7 @@ public class Main {
        mexicosDistances.addEdgeByName("CV","MX",86.0);
        mexicosDistances.addEdgeByName("CV","PB",157.0);
        mexicosDistances.addEdgeByName("CV","CO",186.0);
-       mexicosDistances.addEdgeByName("CV","TL",92.0);
+       mexicosDistances.addEdgeByName("CV","TC",92.0);
 
        mexicosDistances.addEdgeByName("DG","ZS",291.0);
        mexicosDistances.addEdgeByName("DG","TP",504.0);
@@ -132,6 +133,7 @@ public class Main {
        mexicosTimes.addNodeName("MZ");
        mexicosTimes.addNodeName("OX");
        mexicosTimes.addNodeName("PB");
+       mexicosDistances.addNodeName("PC");
        mexicosTimes.addNodeName("QR");
        mexicosTimes.addNodeName("SP");
        mexicosTimes.addNodeName("ST");

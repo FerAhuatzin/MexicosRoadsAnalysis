@@ -61,8 +61,13 @@ public class Graph {
                 found2 = true;
             } //end if
         } //end for
-        adjacencyMatrix[x][y]=weight;
-        adjacencyMatrix[y][x]=weight;
+        if (x==y) {
+            System.out.println("Unable to add edge from " + initialNode + " to " + connectedTo);
+        } //end if
+        else {
+            adjacencyMatrix[x][y]=weight;
+            adjacencyMatrix[y][x]=weight;
+        } //end else
 
     } //end addEdgeByName
 
@@ -75,7 +80,7 @@ public class Graph {
         for (int i = 0; i<numberOfNodes;i++) {
             System.out.printf("Connections for %-4s ", nodes[i]);
             for (int j = 0; j<numberOfNodes;j++) {
-                System.out.printf("%4s:%-8f    ",nodes[j],adjacencyMatrix[i][j]);
+                System.out.printf("%4s:%-10f    ",nodes[j],adjacencyMatrix[i][j]);
             } //end for
             System.out.println();
         } //end for
