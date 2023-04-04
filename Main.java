@@ -13,6 +13,8 @@ public class Main {
        mexicosDistances.addNodeName("CP");
        mexicosDistances.addNodeName("CV");
        mexicosDistances.addNodeName("DG");
+       mexicosDistances.addNodeName("ES");
+       mexicosDistances.addNodeName("GD");
        mexicosDistances.addNodeName("GT");
        mexicosDistances.addNodeName("HS");
        mexicosDistances.addNodeName("LC");
