@@ -26,6 +26,9 @@ public class Graph {
         } //end for
     } //end cleanMatrix
 
+
+
+
     public void addNodeName (String name) {
 
         if (filledNodes!=(numberOfNodes-1)){

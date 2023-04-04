@@ -27,7 +27,18 @@ public class Main {
        mexicosDistances.addNodeName("MZ");
        mexicosDistances.addNodeName("OX");
        mexicosDistances.addNodeName("PB");
-       mexicosDistances.addNodeName("PC");
+       mexicosDistances.addNodeName("QR");
+       mexicosDistances.addNodeName("SP");
+       mexicosDistances.addNodeName("ST");
+       mexicosDistances.addNodeName("TC");
+       mexicosDistances.addNodeName("TG");
+       mexicosDistances.addNodeName("TP");
+       mexicosDistances.addNodeName("TX");
+       mexicosDistances.addNodeName("VH");
+       mexicosDistances.addNodeName("VZ");
+       mexicosDistances.addNodeName("XP");
+       mexicosDistances.addNodeName("ZS");
+
        mexicosDistances.showGraph();
     }
 }
