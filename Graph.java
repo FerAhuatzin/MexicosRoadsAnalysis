@@ -137,8 +137,8 @@ public class Graph {
             int minimumPosition = numberOfNodes+1;
             for (int i = 0; i<numberOfNodes;i++) {
                 if (notVisitedNodes[i]!=-1) {
-                    if (adjacencyMatrix[position][notVisitedNodes[i]]<minimum) {
-                        minimum = adjacencyMatrix[position][notVisitedNodes[i]];
+                    if (dijkstraResult[notVisitedNodes[i]][1]<minimum) {
+                        minimum = dijkstraResult[notVisitedNodes[i]][1];
                         minimumPosition = notVisitedNodes[i];
                     } //end if
                 } //end if
