@@ -134,7 +134,7 @@ public class Graph {
 
             //get the minimum path for the next node
             double minimum = Double.POSITIVE_INFINITY;
-            int minimumPosition = notVisitedNodes[0];
+            int minimumPosition = numberOfNodes+1;
             for (int i = 0; i<numberOfNodes;i++) {
                 if (notVisitedNodes[i]!=-1) {
                     if (adjacencyMatrix[position][notVisitedNodes[i]]<minimum) {
@@ -145,12 +145,21 @@ public class Graph {
             } //end for
 
             //update not visited and visited nodes arrays
-            notVisitedNodes[minimumPosition] = -1;
-            visitedNodes[positionOfVisitedNodes] = minimumPosition;
-            positionOfVisitedNodes++;
-
-            //change position to start analyzing in the following iteration from that node
-            position = minimumPosition;
+            if (minimumPosition!=(numberOfNodes+1)) {
+                notVisitedNodes[minimumPosition] = -1;
+                visitedNodes[positionOfVisitedNodes] = minimumPosition;
+                positionOfVisitedNodes++;
+                //change position to start analyzing in the following iteration from that node
+                position = minimumPosition;
+            } //end if
+            else {
+                for (int i =0; i<numberOfNodes; i++) {
+                    if (dijkstraResult[i][2]<0) {
+                        dijkstraResult[i][2] = -1;
+                    } //end if
+                } //end for
+                positionOfVisitedNodes=numberOfNodes;
+            } //end else
 
         } //end while
 
@@ -170,7 +179,13 @@ public class Graph {
                     System.out.printf("%-2f\t", dijkstraResult[i][j]);
                 } //end if
                 if (j==2 && i!=initialNode) {
-                    System.out.printf("%-8s\t", nodes[(int)dijkstraResult[i][j]]);
+                    if (dijkstraResult[i][2]==-1) {
+                        System.out.printf("%-8s\t", "No path");
+                    } //end if
+                    else {
+                        System.out.printf("%-8s\t", nodes[(int)dijkstraResult[i][j]]);
+                    } //end else
+
                 } //end if
             } //end for
             System.out.println(" ");

@@ -102,7 +102,8 @@ public class Main {
 
        mexicosDistances.showGraph();
 
-
+      //hermano esta es una prueba con lo que ya llevas, ya vi que si funciona:)
+       mexicosDistances.findMinimumPaths("CA");
 
        //MEXICOS TIMES
        System.out.println("\n\nMEXICOS TIMES \n");
