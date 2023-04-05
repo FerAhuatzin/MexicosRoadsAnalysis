@@ -151,8 +151,46 @@ public class Main {
 
        mexicosDistances.showGraph();
 
-      //hermano esta es una prueba con lo que ya llevas, ya vi que si funciona:)
-       mexicosDistances.findMinimumPaths("CA");
+      //BUSQUEDA
+       //CAMPECHE
+       System.out.println("\nCAMPECHE \n");
+       mexicosDistances.findMinimumPaths("CP");
+       //CHIAPAS
+       System.out.println("CHIAPAS \n");
+       mexicosDistances.findMinimumPaths("TG");
+       //GUERRERO
+       System.out.println("GUERRERO \n");
+       mexicosDistances.findMinimumPaths("CO");
+       //OAXACA
+       System.out.println("OAXACA \n");
+       mexicosDistances.findMinimumPaths("OX");
+       //QUINTANA ROO
+       System.out.println("QUINTANA ROO \n");
+       mexicosDistances.findMinimumPaths("CL");
+       //TABASCO
+       System.out.println("TABASCO \n");
+       mexicosDistances.findMinimumPaths("VH");
+       //YUCATAN
+       System.out.println("YUCATAN \n");
+       mexicosDistances.findMinimumPaths("MD");
+
+       //5 PUERTOS
+       System.out.println("\n5 PUERTOS \n");
+       //MANZANILLO
+       System.out.println("MANZANILLO \n");
+       mexicosDistances.findMinimumPaths("MZ");
+       //VERACRUZ
+       System.out.println("VERACRUZ \n");
+       mexicosDistances.findMinimumPaths("VZ");
+       //LAZARO CARDENAS
+       System.out.println("LAZARO CARDENAS \n");
+       mexicosDistances.findMinimumPaths("LC");
+       //ALTAMIRA
+       System.out.println("ALTAMIRA \n");
+       mexicosDistances.findMinimumPaths("AT");
+       //ENSENADA
+       System.out.println("ENSENADA \n");
+       mexicosDistances.findMinimumPaths("ES");
 
        //MEXICOS TIMES
        System.out.println("\n\nMEXICOS TIMES \n");
@@ -301,7 +339,48 @@ public class Main {
 
        mexicosTimes.addEdgeByName("VZ","XP",89.0);
 
-
        mexicosTimes.showGraph();
+       
+       //BUSQUEDA
+       //CAMPECHE
+       System.out.println("\nCAMPECHE \n");
+       mexicosTimes.findMinimumPaths("CP");
+       //CHIAPAS
+       System.out.println("CHIAPAS \n");
+       mexicosTimes.findMinimumPaths("TG");
+       //GUERRERO
+       System.out.println("GUERRERO \n");
+       mexicosTimes.findMinimumPaths("CO");
+       //OAXACA
+       System.out.println("OAXACA \n");
+       mexicosTimes.findMinimumPaths("OX");
+       //QUINTANA ROO
+       System.out.println("QUINTANA ROO \n");
+       mexicosTimes.findMinimumPaths("CL");
+       //TABASCO
+       System.out.println("TABASCO \n");
+       mexicosTimes.findMinimumPaths("VH");
+       //YUCATAN
+       System.out.println("YUCATAN \n");
+       mexicosTimes.findMinimumPaths("MD");
+
+       //5 PUERTOS
+       System.out.println("\n5 PUERTOS \n");
+       //MANZANILLO
+       System.out.println("MANZANILLO \n");
+       mexicosTimes.findMinimumPaths("MZ");
+       //VERACRUZ
+       System.out.println("VERACRUZ \n");
+       mexicosTimes.findMinimumPaths("VZ");
+       //LAZARO CARDENAS
+       System.out.println("LAZARO CARDENAS \n");
+       mexicosTimes.findMinimumPaths("LC");
+       //ALTAMIRA
+       System.out.println("ALTAMIRA \n");
+       mexicosTimes.findMinimumPaths("AT");
+       //ENSENADA
+       System.out.println("ENSENADA \n");
+       mexicosTimes.findMinimumPaths("ES");
+
     }
 }
