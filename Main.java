@@ -183,7 +183,7 @@ public class Main {
        mexicosTimes.addNodeName("MZ");
        mexicosTimes.addNodeName("OX");
        mexicosTimes.addNodeName("PB");
-       mexicosDistances.addNodeName("PC");
+       mexicosTimes.addNodeName("PC");
        mexicosTimes.addNodeName("QR");
        mexicosTimes.addNodeName("SP");
        mexicosTimes.addNodeName("ST");
