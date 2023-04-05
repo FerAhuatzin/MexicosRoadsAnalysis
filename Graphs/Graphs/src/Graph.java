@@ -169,14 +169,14 @@ public class Graph {
 
     public void TransformAndPrintDijkstrasResult (double[][] dijkstraResult, String node, int initialNode) {
         System.out.println("For node " + node + " the shortest paths are");
-        System.out.printf("%-8S\t%-8S\t%-8S\n", "Node", "Weight", "Path");
+        System.out.printf("%-4S\t%-14S\t%-8S\n", "Node", "Weight", "Path");
         for (int i = 0; i<numberOfNodes; i++) {
             for (int j = 0; j<3;j++) {
                 if (j==0) {
-                    System.out.printf("%-8S\t",nodes[i]);
+                    System.out.printf("%-4S\t",nodes[i]);
                 } //end if
                 if (j==1) {
-                    System.out.printf("%-2f\t", dijkstraResult[i][j]);
+                    System.out.printf("%-14f\t", dijkstraResult[i][j]);
                 } //end if
                 if (j==2 && i!=initialNode) {
                     if (dijkstraResult[i][2]==-1) {
@@ -195,7 +195,7 @@ public class Graph {
         for (int i = 0; i<numberOfNodes;i++) {
             System.out.printf("Connections for %-4s ", nodes[i]);
             for (int j = 0; j<numberOfNodes;j++) {
-                System.out.printf("%4s:%-10f    ",nodes[j],adjacencyMatrix[i][j]);
+                System.out.printf("%4s:%-11f    ",nodes[j],adjacencyMatrix[i][j]);
             } //end for
             System.out.println();
         } //end for

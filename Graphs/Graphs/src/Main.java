@@ -152,45 +152,48 @@ public class Main {
       mexicosDistances.showGraph();
 
       //BUSQUEDA
+
+      //SURESTE
       //CAMPECHE
+      System.out.println("\nSURESTE \n");
       System.out.println("\nCAMPECHE \n");
       mexicosDistances.findMinimumPaths("CP");
       //CHIAPAS
-      System.out.println("CHIAPAS \n");
+      System.out.println("\nCHIAPAS \n");
       mexicosDistances.findMinimumPaths("TG");
       //GUERRERO
-      System.out.println("GUERRERO \n");
+      System.out.println("\nGUERRERO \n");
       mexicosDistances.findMinimumPaths("CO");
       //OAXACA
-      System.out.println("OAXACA \n");
+      System.out.println("\nOAXACA \n");
       mexicosDistances.findMinimumPaths("OX");
       //QUINTANA ROO
-      System.out.println("QUINTANA ROO \n");
+      System.out.println("\nQUINTANA ROO \n");
       mexicosDistances.findMinimumPaths("CL");
       //TABASCO
-      System.out.println("TABASCO \n");
+      System.out.println("\nTABASCO \n");
       mexicosDistances.findMinimumPaths("VH");
       //YUCATAN
-      System.out.println("YUCATAN \n");
+      System.out.println("\nYUCATAN \n");
       mexicosDistances.findMinimumPaths("MD");
 
-      //5 PUERTOS
-      System.out.println("\n5 PUERTOS \n");
+      //5 MAYOR IDH
+      System.out.println("\n5 MAYOR IDH \n");
       //MANZANILLO
-      System.out.println("MANZANILLO \n");
-      mexicosDistances.findMinimumPaths("MZ");
+      System.out.println("\nCDMX \n");
+      mexicosDistances.findMinimumPaths("MX");
       //VERACRUZ
-      System.out.println("VERACRUZ \n");
-      mexicosDistances.findMinimumPaths("VZ");
+      System.out.println("\nNUEVO LEON \n");
+      mexicosDistances.findMinimumPaths("MY");
       //LAZARO CARDENAS
-      System.out.println("LAZARO CARDENAS \n");
-      mexicosDistances.findMinimumPaths("LC");
+      System.out.println("\nBAJA CALIFORNIA \n");
+      mexicosDistances.findMinimumPaths("ML");
       //ALTAMIRA
-      System.out.println("ALTAMIRA \n");
-      mexicosDistances.findMinimumPaths("AT");
+      System.out.println("\nAGUASCALIENTES \n");
+      mexicosDistances.findMinimumPaths("AC");
       //ENSENADA
-      System.out.println("ENSENADA \n");
-      mexicosDistances.findMinimumPaths("ES");
+      System.out.println("\nBAJA CALIFORNIA SUR \n");
+      mexicosDistances.findMinimumPaths("LP");
 
       //MEXICOS TIMES
       System.out.println("\n\nMEXICOS TIMES \n");
@@ -346,41 +349,41 @@ public class Main {
       System.out.println("\nCAMPECHE \n");
       mexicosTimes.findMinimumPaths("CP");
       //CHIAPAS
-      System.out.println("CHIAPAS \n");
+      System.out.println("\nCHIAPAS \n");
       mexicosTimes.findMinimumPaths("TG");
       //GUERRERO
-      System.out.println("GUERRERO \n");
+      System.out.println("\nGUERRERO \n");
       mexicosTimes.findMinimumPaths("CO");
       //OAXACA
-      System.out.println("OAXACA \n");
+      System.out.println("\nOAXACA \n");
       mexicosTimes.findMinimumPaths("OX");
       //QUINTANA ROO
-      System.out.println("QUINTANA ROO \n");
+      System.out.println("\nQUINTANA ROO \n");
       mexicosTimes.findMinimumPaths("CL");
       //TABASCO
-      System.out.println("TABASCO \n");
+      System.out.println("\nTABASCO \n");
       mexicosTimes.findMinimumPaths("VH");
       //YUCATAN
-      System.out.println("YUCATAN \n");
+      System.out.println("\nYUCATAN \n");
       mexicosTimes.findMinimumPaths("MD");
 
-      //5 PUERTOS
-      System.out.println("\n5 PUERTOS \n");
+      //5 MAYOR IDH
+      System.out.println("\n5 MAYOR IDH \n");
       //MANZANILLO
-      System.out.println("MANZANILLO \n");
-      mexicosTimes.findMinimumPaths("MZ");
+      System.out.println("\nCDMX \n");
+      mexicosTimes.findMinimumPaths("MX");
       //VERACRUZ
-      System.out.println("VERACRUZ \n");
-      mexicosTimes.findMinimumPaths("VZ");
+      System.out.println("\nNUEVO LEON \n");
+      mexicosTimes.findMinimumPaths("MY");
       //LAZARO CARDENAS
-      System.out.println("LAZARO CARDENAS \n");
-      mexicosTimes.findMinimumPaths("LC");
+      System.out.println("\nBAJA CALIFORNIA \n");
+      mexicosTimes.findMinimumPaths("ML");
       //ALTAMIRA
-      System.out.println("ALTAMIRA \n");
-      mexicosTimes.findMinimumPaths("AT");
+      System.out.println("\nAGUASCALIENTES \n");
+      mexicosTimes.findMinimumPaths("AC");
       //ENSENADA
-      System.out.println("ENSENADA \n");
-      mexicosTimes.findMinimumPaths("ES");
+      System.out.println("\nBAJA CALIFORNIA SUR \n");
+      mexicosTimes.findMinimumPaths("LP");
 
    }
 }
