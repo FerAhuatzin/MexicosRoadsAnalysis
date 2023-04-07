@@ -532,7 +532,7 @@ public class Main {
       mexicosTimes.showMinimumPath(minimumPath, "TG", "AT");
       mexicosTimes.showMinimumPath(minimumPath, "TG", "ES");
       System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
-      mexicosTimes.showMinimumPath(minimumPath, "CP", "CA");
+      mexicosTimes.showMinimumPath(minimumPath, "TG", "CA");
       //GUERRERO
       System.out.println("\nGUERRERO \n");
       minimumPath = mexicosTimes.findMinimumPaths("CO");

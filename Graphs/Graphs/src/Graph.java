@@ -204,15 +204,19 @@ public class Graph {
         int originIndex = getNodeIndex(origin);
         int destiniesIndex = getNodeIndex(destiny);
 
-        System.out.print("The minimum path for " + origin + " to " + destiny + " is: " + dijkstraResult[destiniesIndex][1] + " (" + nodes[(int) dijkstraResult[destiniesIndex][0]] + "  ");
+        if (origin.equals(destiny)) {
+            System.out.print("The minimum path for " + origin + " to " + destiny + " is: " + dijkstraResult[destiniesIndex][1] + " (" + origin + "  )");
+        } //end if
+        else {
+            System.out.print("The minimum path for " + origin + " to " + destiny + " is: " + dijkstraResult[destiniesIndex][1] + " (" + nodes[(int) dijkstraResult[destiniesIndex][0]] + "  ");
 
-        while (destiniesIndex!=originIndex) {
+            while (dijkstraResult[destiniesIndex][2]!=originIndex) {
+                System.out.print(nodes[(int) dijkstraResult[destiniesIndex][2]] + " ");
+                destiniesIndex = (int) dijkstraResult[destiniesIndex][2];
+            } //end while
 
-            System.out.print(nodes[(int) dijkstraResult[destiniesIndex][2]] + " ");
-            destiniesIndex = (int) dijkstraResult[destiniesIndex][2];
-        } //end while
-
-        System.out.println(")");
+            System.out.println(origin + ")");
+        } //end else
 
     } //end showMinimumPath
     public void showGraph() {
