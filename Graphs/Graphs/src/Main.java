@@ -157,43 +157,199 @@ public class Main {
       //CAMPECHE
       System.out.println("\nSURESTE \n");
       System.out.println("\nCAMPECHE \n");
-      mexicosDistances.findMinimumPaths("CP");
+      double[][] minimumPath = mexicosDistances.findMinimumPaths("CP");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosDistances.showMinimumPath(minimumPath, "CP", "TC");
+      mexicosDistances.showMinimumPath(minimumPath, "CP", "MX");
+      mexicosDistances.showMinimumPath(minimumPath, "CP", "GD");
+      mexicosDistances.showMinimumPath(minimumPath, "CP", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosDistances.showMinimumPath(minimumPath, "CP", "MZ");
+      mexicosDistances.showMinimumPath(minimumPath, "CP", "VZ");
+      mexicosDistances.showMinimumPath(minimumPath, "CP", "LC");
+      mexicosDistances.showMinimumPath(minimumPath, "CP", "AT");
+      mexicosDistances.showMinimumPath(minimumPath, "CP", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosDistances.showMinimumPath(minimumPath, "CP", "CA");
       //CHIAPAS
       System.out.println("\nCHIAPAS \n");
-      mexicosDistances.findMinimumPaths("TG");
+      minimumPath = mexicosDistances.findMinimumPaths("TG");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosDistances.showMinimumPath(minimumPath, "TG", "TC");
+      mexicosDistances.showMinimumPath(minimumPath, "TG", "MX");
+      mexicosDistances.showMinimumPath(minimumPath, "TG", "GD");
+      mexicosDistances.showMinimumPath(minimumPath, "TG", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosDistances.showMinimumPath(minimumPath, "TG", "MZ");
+      mexicosDistances.showMinimumPath(minimumPath, "TG", "VZ");
+      mexicosDistances.showMinimumPath(minimumPath, "TG", "LC");
+      mexicosDistances.showMinimumPath(minimumPath, "TG", "AT");
+      mexicosDistances.showMinimumPath(minimumPath, "TG", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosDistances.showMinimumPath(minimumPath, "TG", "CA");
       //GUERRERO
       System.out.println("\nGUERRERO \n");
-      mexicosDistances.findMinimumPaths("CO");
+      minimumPath = mexicosDistances.findMinimumPaths("CO");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosDistances.showMinimumPath(minimumPath, "CO", "TC");
+      mexicosDistances.showMinimumPath(minimumPath, "CO", "MX");
+      mexicosDistances.showMinimumPath(minimumPath, "CO", "GD");
+      mexicosDistances.showMinimumPath(minimumPath, "CO", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosDistances.showMinimumPath(minimumPath, "CO", "MZ");
+      mexicosDistances.showMinimumPath(minimumPath, "CO", "VZ");
+      mexicosDistances.showMinimumPath(minimumPath, "CO", "LC");
+      mexicosDistances.showMinimumPath(minimumPath, "CO", "AT");
+      mexicosDistances.showMinimumPath(minimumPath, "CO", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosDistances.showMinimumPath(minimumPath, "CO", "CA");
       //OAXACA
       System.out.println("\nOAXACA \n");
-      mexicosDistances.findMinimumPaths("OX");
+      minimumPath = mexicosDistances.findMinimumPaths("OX");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosDistances.showMinimumPath(minimumPath, "OX", "TC");
+      mexicosDistances.showMinimumPath(minimumPath, "OX", "MX");
+      mexicosDistances.showMinimumPath(minimumPath, "OX", "GD");
+      mexicosDistances.showMinimumPath(minimumPath, "OX", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosDistances.showMinimumPath(minimumPath, "OX", "MZ");
+      mexicosDistances.showMinimumPath(minimumPath, "OX", "VZ");
+      mexicosDistances.showMinimumPath(minimumPath, "OX", "LC");
+      mexicosDistances.showMinimumPath(minimumPath, "OX", "AT");
+      mexicosDistances.showMinimumPath(minimumPath, "OX", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosDistances.showMinimumPath(minimumPath, "OX", "CA");
       //QUINTANA ROO
       System.out.println("\nQUINTANA ROO \n");
-      mexicosDistances.findMinimumPaths("CL");
+      minimumPath = mexicosDistances.findMinimumPaths("CL");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosDistances.showMinimumPath(minimumPath, "CL", "TC");
+      mexicosDistances.showMinimumPath(minimumPath, "CL", "MX");
+      mexicosDistances.showMinimumPath(minimumPath, "CL", "GD");
+      mexicosDistances.showMinimumPath(minimumPath, "CL", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosDistances.showMinimumPath(minimumPath, "CL", "MZ");
+      mexicosDistances.showMinimumPath(minimumPath, "CL", "VZ");
+      mexicosDistances.showMinimumPath(minimumPath, "CL", "LC");
+      mexicosDistances.showMinimumPath(minimumPath, "CL", "AT");
+      mexicosDistances.showMinimumPath(minimumPath, "CL", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosDistances.showMinimumPath(minimumPath, "CL", "CA");
       //TABASCO
       System.out.println("\nTABASCO \n");
-      mexicosDistances.findMinimumPaths("VH");
+      minimumPath = mexicosDistances.findMinimumPaths("VH");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosDistances.showMinimumPath(minimumPath, "VH", "TC");
+      mexicosDistances.showMinimumPath(minimumPath, "VH", "MX");
+      mexicosDistances.showMinimumPath(minimumPath, "VH", "GD");
+      mexicosDistances.showMinimumPath(minimumPath, "VH", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosDistances.showMinimumPath(minimumPath, "VH", "MZ");
+      mexicosDistances.showMinimumPath(minimumPath, "VH", "VZ");
+      mexicosDistances.showMinimumPath(minimumPath, "VH", "LC");
+      mexicosDistances.showMinimumPath(minimumPath, "VH", "AT");
+      mexicosDistances.showMinimumPath(minimumPath, "VH", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosDistances.showMinimumPath(minimumPath, "VH", "CA");
       //YUCATAN
       System.out.println("\nYUCATAN \n");
-      mexicosDistances.findMinimumPaths("MD");
+      minimumPath = mexicosDistances.findMinimumPaths("MD");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosDistances.showMinimumPath(minimumPath, "MD", "TC");
+      mexicosDistances.showMinimumPath(minimumPath, "MD", "MX");
+      mexicosDistances.showMinimumPath(minimumPath, "MD", "GD");
+      mexicosDistances.showMinimumPath(minimumPath, "MD", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosDistances.showMinimumPath(minimumPath, "MD", "MZ");
+      mexicosDistances.showMinimumPath(minimumPath, "MD", "VZ");
+      mexicosDistances.showMinimumPath(minimumPath, "MD", "LC");
+      mexicosDistances.showMinimumPath(minimumPath, "MD", "AT");
+      mexicosDistances.showMinimumPath(minimumPath, "MD", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosDistances.showMinimumPath(minimumPath, "MD", "CA");
 
       //5 MAYOR IDH
       System.out.println("\n5 MAYOR IDH \n");
-      //MANZANILLO
+      //CDMX
       System.out.println("\nCDMX \n");
-      mexicosDistances.findMinimumPaths("MX");
-      //VERACRUZ
+      minimumPath = mexicosDistances.findMinimumPaths("MX");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosDistances.showMinimumPath(minimumPath, "MX", "TC");
+      mexicosDistances.showMinimumPath(minimumPath, "MX", "MX");
+      mexicosDistances.showMinimumPath(minimumPath, "MX", "GD");
+      mexicosDistances.showMinimumPath(minimumPath, "MX", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosDistances.showMinimumPath(minimumPath, "MX", "MZ");
+      mexicosDistances.showMinimumPath(minimumPath, "MX", "VZ");
+      mexicosDistances.showMinimumPath(minimumPath, "MX", "LC");
+      mexicosDistances.showMinimumPath(minimumPath, "MX", "AT");
+      mexicosDistances.showMinimumPath(minimumPath, "MX", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosDistances.showMinimumPath(minimumPath, "MX", "CA");
+      //NUEVO LEON
       System.out.println("\nNUEVO LEON \n");
-      mexicosDistances.findMinimumPaths("MY");
-      //LAZARO CARDENAS
+      minimumPath = mexicosDistances.findMinimumPaths("MY");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosDistances.showMinimumPath(minimumPath, "MY", "TC");
+      mexicosDistances.showMinimumPath(minimumPath, "MY", "MX");
+      mexicosDistances.showMinimumPath(minimumPath, "MY", "GD");
+      mexicosDistances.showMinimumPath(minimumPath, "MY", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosDistances.showMinimumPath(minimumPath, "MY", "MZ");
+      mexicosDistances.showMinimumPath(minimumPath, "MY", "VZ");
+      mexicosDistances.showMinimumPath(minimumPath, "MY", "LC");
+      mexicosDistances.showMinimumPath(minimumPath, "MY", "AT");
+      mexicosDistances.showMinimumPath(minimumPath, "MY", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosDistances.showMinimumPath(minimumPath, "MY", "MY");
+      //BAJA CALIFORNIA
       System.out.println("\nBAJA CALIFORNIA \n");
-      mexicosDistances.findMinimumPaths("ML");
-      //ALTAMIRA
+      minimumPath = mexicosDistances.findMinimumPaths("ML");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosDistances.showMinimumPath(minimumPath, "ML", "TC");
+      mexicosDistances.showMinimumPath(minimumPath, "ML", "MX");
+      mexicosDistances.showMinimumPath(minimumPath, "ML", "GD");
+      mexicosDistances.showMinimumPath(minimumPath, "ML", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosDistances.showMinimumPath(minimumPath, "ML", "MZ");
+      mexicosDistances.showMinimumPath(minimumPath, "ML", "VZ");
+      mexicosDistances.showMinimumPath(minimumPath, "ML", "LC");
+      mexicosDistances.showMinimumPath(minimumPath, "ML", "AT");
+      mexicosDistances.showMinimumPath(minimumPath, "ML", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosDistances.showMinimumPath(minimumPath, "ML", "ML");
+      //AGUSCALIENTES
       System.out.println("\nAGUASCALIENTES \n");
-      mexicosDistances.findMinimumPaths("AC");
-      //ENSENADA
+      minimumPath = mexicosDistances.findMinimumPaths("AC");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosDistances.showMinimumPath(minimumPath, "AC", "TC");
+      mexicosDistances.showMinimumPath(minimumPath, "AC", "MX");
+      mexicosDistances.showMinimumPath(minimumPath, "AC", "GD");
+      mexicosDistances.showMinimumPath(minimumPath, "AC", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosDistances.showMinimumPath(minimumPath, "AC", "MZ");
+      mexicosDistances.showMinimumPath(minimumPath, "AC", "VZ");
+      mexicosDistances.showMinimumPath(minimumPath, "AC", "LC");
+      mexicosDistances.showMinimumPath(minimumPath, "AC", "AT");
+      mexicosDistances.showMinimumPath(minimumPath, "AC", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosDistances.showMinimumPath(minimumPath, "AC", "ST");
+      //BAJA CALIFORNIA SUR
       System.out.println("\nBAJA CALIFORNIA SUR \n");
-      mexicosDistances.findMinimumPaths("LP");
+      minimumPath = mexicosDistances.findMinimumPaths("LP");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosDistances.showMinimumPath(minimumPath, "LP", "TC");
+      mexicosDistances.showMinimumPath(minimumPath, "LP", "MX");
+      mexicosDistances.showMinimumPath(minimumPath, "LP", "GD");
+      mexicosDistances.showMinimumPath(minimumPath, "LP", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosDistances.showMinimumPath(minimumPath, "LP", "MZ");
+      mexicosDistances.showMinimumPath(minimumPath, "LP", "VZ");
+      mexicosDistances.showMinimumPath(minimumPath, "LP", "LC");
+      mexicosDistances.showMinimumPath(minimumPath, "LP", "AT");
+      mexicosDistances.showMinimumPath(minimumPath, "LP", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosDistances.showMinimumPath(minimumPath, "LP", "ML");
 
       //MEXICOS TIMES
       System.out.println("\n\nMEXICOS TIMES \n");
@@ -347,43 +503,198 @@ public class Main {
       //BUSQUEDA
       //CAMPECHE
       System.out.println("\nCAMPECHE \n");
-      mexicosTimes.findMinimumPaths("CP");
+      minimumPath = mexicosTimes.findMinimumPaths("CP");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosTimes.showMinimumPath(minimumPath, "CP", "TC");
+      mexicosTimes.showMinimumPath(minimumPath, "CP", "MX");
+      mexicosTimes.showMinimumPath(minimumPath, "CP", "GD");
+      mexicosTimes.showMinimumPath(minimumPath, "CP", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosTimes.showMinimumPath(minimumPath, "CP", "MZ");
+      mexicosTimes.showMinimumPath(minimumPath, "CP", "VZ");
+      mexicosTimes.showMinimumPath(minimumPath, "CP", "LC");
+      mexicosTimes.showMinimumPath(minimumPath, "CP", "AT");
+      mexicosTimes.showMinimumPath(minimumPath, "CP", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosTimes.showMinimumPath(minimumPath, "CP", "CA");
       //CHIAPAS
       System.out.println("\nCHIAPAS \n");
-      mexicosTimes.findMinimumPaths("TG");
+      minimumPath = mexicosTimes.findMinimumPaths("TG");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosTimes.showMinimumPath(minimumPath, "TG", "TC");
+      mexicosTimes.showMinimumPath(minimumPath, "TG", "MX");
+      mexicosTimes.showMinimumPath(minimumPath, "TG", "GD");
+      mexicosTimes.showMinimumPath(minimumPath, "TG", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosTimes.showMinimumPath(minimumPath, "TG", "MZ");
+      mexicosTimes.showMinimumPath(minimumPath, "TG", "VZ");
+      mexicosTimes.showMinimumPath(minimumPath, "TG", "LC");
+      mexicosTimes.showMinimumPath(minimumPath, "TG", "AT");
+      mexicosTimes.showMinimumPath(minimumPath, "TG", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosTimes.showMinimumPath(minimumPath, "CP", "CA");
       //GUERRERO
       System.out.println("\nGUERRERO \n");
-      mexicosTimes.findMinimumPaths("CO");
+      minimumPath = mexicosTimes.findMinimumPaths("CO");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosTimes.showMinimumPath(minimumPath, "CO", "TC");
+      mexicosTimes.showMinimumPath(minimumPath, "CO", "MX");
+      mexicosTimes.showMinimumPath(minimumPath, "CO", "GD");
+      mexicosTimes.showMinimumPath(minimumPath, "CO", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosTimes.showMinimumPath(minimumPath, "CO", "MZ");
+      mexicosTimes.showMinimumPath(minimumPath, "CO", "VZ");
+      mexicosTimes.showMinimumPath(minimumPath, "CO", "LC");
+      mexicosTimes.showMinimumPath(minimumPath, "CO", "AT");
+      mexicosTimes.showMinimumPath(minimumPath, "CO", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosTimes.showMinimumPath(minimumPath, "CO", "CA");
       //OAXACA
       System.out.println("\nOAXACA \n");
-      mexicosTimes.findMinimumPaths("OX");
+      minimumPath = mexicosTimes.findMinimumPaths("OX");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosTimes.showMinimumPath(minimumPath, "OX", "TC");
+      mexicosTimes.showMinimumPath(minimumPath, "OX", "MX");
+      mexicosTimes.showMinimumPath(minimumPath, "OX", "GD");
+      mexicosTimes.showMinimumPath(minimumPath, "OX", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosTimes.showMinimumPath(minimumPath, "OX", "MZ");
+      mexicosTimes.showMinimumPath(minimumPath, "OX", "VZ");
+      mexicosTimes.showMinimumPath(minimumPath, "OX", "LC");
+      mexicosTimes.showMinimumPath(minimumPath, "OX", "AT");
+      mexicosTimes.showMinimumPath(minimumPath, "OX", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosTimes.showMinimumPath(minimumPath, "OX", "CA");
       //QUINTANA ROO
       System.out.println("\nQUINTANA ROO \n");
-      mexicosTimes.findMinimumPaths("CL");
+      minimumPath = mexicosTimes.findMinimumPaths("CL");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosTimes.showMinimumPath(minimumPath, "CL", "TC");
+      mexicosTimes.showMinimumPath(minimumPath, "CL", "MX");
+      mexicosTimes.showMinimumPath(minimumPath, "CL", "GD");
+      mexicosTimes.showMinimumPath(minimumPath, "CL", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosTimes.showMinimumPath(minimumPath, "CL", "MZ");
+      mexicosTimes.showMinimumPath(minimumPath, "CL", "VZ");
+      mexicosTimes.showMinimumPath(minimumPath, "CL", "LC");
+      mexicosTimes.showMinimumPath(minimumPath, "CL", "AT");
+      mexicosTimes.showMinimumPath(minimumPath, "CL", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosTimes.showMinimumPath(minimumPath, "CL", "CA");
       //TABASCO
       System.out.println("\nTABASCO \n");
-      mexicosTimes.findMinimumPaths("VH");
+      minimumPath = mexicosTimes.findMinimumPaths("VH");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosTimes.showMinimumPath(minimumPath, "VH", "TC");
+      mexicosTimes.showMinimumPath(minimumPath, "VH", "MX");
+      mexicosTimes.showMinimumPath(minimumPath, "VH", "GD");
+      mexicosTimes.showMinimumPath(minimumPath, "VH", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosTimes.showMinimumPath(minimumPath, "VH", "MZ");
+      mexicosTimes.showMinimumPath(minimumPath, "VH", "VZ");
+      mexicosTimes.showMinimumPath(minimumPath, "VH", "LC");
+      mexicosTimes.showMinimumPath(minimumPath, "VH", "AT");
+      mexicosTimes.showMinimumPath(minimumPath, "VH", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosTimes.showMinimumPath(minimumPath, "VH", "CA");
       //YUCATAN
       System.out.println("\nYUCATAN \n");
-      mexicosTimes.findMinimumPaths("MD");
+      minimumPath = mexicosTimes.findMinimumPaths("MD");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosTimes.showMinimumPath(minimumPath, "MD", "TC");
+      mexicosTimes.showMinimumPath(minimumPath, "MD", "MX");
+      mexicosTimes.showMinimumPath(minimumPath, "MD", "GD");
+      mexicosTimes.showMinimumPath(minimumPath, "MD", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosTimes.showMinimumPath(minimumPath, "MD", "MZ");
+      mexicosTimes.showMinimumPath(minimumPath, "MD", "VZ");
+      mexicosTimes.showMinimumPath(minimumPath, "MD", "LC");
+      mexicosTimes.showMinimumPath(minimumPath, "MD", "AT");
+      mexicosTimes.showMinimumPath(minimumPath, "MD", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosTimes.showMinimumPath(minimumPath, "MD", "CA");
 
       //5 MAYOR IDH
       System.out.println("\n5 MAYOR IDH \n");
-      //MANZANILLO
+      //CDMX
       System.out.println("\nCDMX \n");
-      mexicosTimes.findMinimumPaths("MX");
-      //VERACRUZ
+      minimumPath = mexicosTimes.findMinimumPaths("MX");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosTimes.showMinimumPath(minimumPath, "MX", "TC");
+      mexicosTimes.showMinimumPath(minimumPath, "MX", "MX");
+      mexicosTimes.showMinimumPath(minimumPath, "MX", "GD");
+      mexicosTimes.showMinimumPath(minimumPath, "MX", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosTimes.showMinimumPath(minimumPath, "MX", "MZ");
+      mexicosTimes.showMinimumPath(minimumPath, "MX", "VZ");
+      mexicosTimes.showMinimumPath(minimumPath, "MX", "LC");
+      mexicosTimes.showMinimumPath(minimumPath, "MX", "AT");
+      mexicosTimes.showMinimumPath(minimumPath, "MX", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosTimes.showMinimumPath(minimumPath, "MX", "CA");
+      //NUEVO LEON
       System.out.println("\nNUEVO LEON \n");
-      mexicosTimes.findMinimumPaths("MY");
-      //LAZARO CARDENAS
+      minimumPath = mexicosTimes.findMinimumPaths("MY");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosTimes.showMinimumPath(minimumPath, "MY", "TC");
+      mexicosTimes.showMinimumPath(minimumPath, "MY", "MX");
+      mexicosTimes.showMinimumPath(minimumPath, "MY", "GD");
+      mexicosTimes.showMinimumPath(minimumPath, "MY", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosTimes.showMinimumPath(minimumPath, "MY", "MZ");
+      mexicosTimes.showMinimumPath(minimumPath, "MY", "VZ");
+      mexicosTimes.showMinimumPath(minimumPath, "MY", "LC");
+      mexicosTimes.showMinimumPath(minimumPath, "MY", "AT");
+      mexicosTimes.showMinimumPath(minimumPath, "MY", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosTimes.showMinimumPath(minimumPath, "MY", "MY");
+      //BAJA CALIFORNIA
       System.out.println("\nBAJA CALIFORNIA \n");
-      mexicosTimes.findMinimumPaths("ML");
-      //ALTAMIRA
+      minimumPath = mexicosTimes.findMinimumPaths("ML");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosTimes.showMinimumPath(minimumPath, "ML", "TC");
+      mexicosTimes.showMinimumPath(minimumPath, "ML", "MX");
+      mexicosTimes.showMinimumPath(minimumPath, "ML", "GD");
+      mexicosTimes.showMinimumPath(minimumPath, "ML", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosTimes.showMinimumPath(minimumPath, "ML", "MZ");
+      mexicosTimes.showMinimumPath(minimumPath, "ML", "VZ");
+      mexicosTimes.showMinimumPath(minimumPath, "ML", "LC");
+      mexicosTimes.showMinimumPath(minimumPath, "ML", "AT");
+      mexicosTimes.showMinimumPath(minimumPath, "ML", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosTimes.showMinimumPath(minimumPath, "ML", "ML");
+      //AGUSCALIENTES
       System.out.println("\nAGUASCALIENTES \n");
-      mexicosTimes.findMinimumPaths("AC");
-      //ENSENADA
+      minimumPath = mexicosTimes.findMinimumPaths("AC");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosTimes.showMinimumPath(minimumPath, "AC", "TC");
+      mexicosTimes.showMinimumPath(minimumPath, "AC", "MX");
+      mexicosTimes.showMinimumPath(minimumPath, "AC", "GD");
+      mexicosTimes.showMinimumPath(minimumPath, "AC", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosTimes.showMinimumPath(minimumPath, "AC", "MZ");
+      mexicosTimes.showMinimumPath(minimumPath, "AC", "VZ");
+      mexicosTimes.showMinimumPath(minimumPath, "AC", "LC");
+      mexicosTimes.showMinimumPath(minimumPath, "AC", "AT");
+      mexicosTimes.showMinimumPath(minimumPath, "AC", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosTimes.showMinimumPath(minimumPath, "AC", "ST");
+      //BAJA CALIFORNIA SUR
       System.out.println("\nBAJA CALIFORNIA SUR \n");
-      mexicosTimes.findMinimumPaths("LP");
-
+      minimumPath = mexicosTimes.findMinimumPaths("LP");
+      System.out.println("\n4 ESTADOS MAS POBLADOS \n");
+      mexicosTimes.showMinimumPath(minimumPath, "LP", "TC");
+      mexicosTimes.showMinimumPath(minimumPath, "LP", "MX");
+      mexicosTimes.showMinimumPath(minimumPath, "LP", "GD");
+      mexicosTimes.showMinimumPath(minimumPath, "LP", "XP");
+      System.out.println("\n5 PUERTOS MAS IMPORTANTES \n");
+      mexicosTimes.showMinimumPath(minimumPath, "LP", "MZ");
+      mexicosTimes.showMinimumPath(minimumPath, "LP", "VZ");
+      mexicosTimes.showMinimumPath(minimumPath, "LP", "LC");
+      mexicosTimes.showMinimumPath(minimumPath, "LP", "AT");
+      mexicosTimes.showMinimumPath(minimumPath, "LP", "ES");
+      System.out.println("\nFRONTERA CON ESTADOS UNIDOS MAS CERCANA \n");
+      mexicosTimes.showMinimumPath(minimumPath, "LP", "ML");
    }
 }

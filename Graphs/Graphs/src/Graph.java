@@ -75,19 +75,26 @@ public class Graph {
         adjacencyMatrix[initialNode][disconnectedTo] = Double.POSITIVE_INFINITY;
     } //end deleteEdge
 
+    int getNodeIndex (String node) {
+        int index = 0;
+        boolean found = false;
+        for (int i = 0; i<numberOfNodes && !found; i++) {
+            if (nodes[i].equals(node)) {
+                index = i;
+                found = true;
+            } //end if
+        } //end for
+        return index;
+    } //endGetNodeIndex
+
     public double[][] findMinimumPaths (String node) {
 
         //get the node we will calculate its minimum paths
         boolean found = false;
         int position = 0;
         int initialNode = 0;
-        for (int i = 0; i<numberOfNodes && !found; i++) {
-            if (nodes[i].equals(node)) {
-                position = i;
-                initialNode = i;
-                found = true;
-            } //end if
-        } //end for
+        position = getNodeIndex(node);
+        initialNode = position;
 
         //initialize the matrix we will work in
         double[][] dijkstraResult;
@@ -191,11 +198,28 @@ public class Graph {
             System.out.println(" ");
         } //end for
     }
+
+    void showMinimumPath (double[][] dijkstraResult, String origin, String destiny) {
+
+        int originIndex = getNodeIndex(origin);
+        int destiniesIndex = getNodeIndex(destiny);
+
+        System.out.print("The minimum path for " + origin + " to " + destiny + " is: " + dijkstraResult[destiniesIndex][1] + " (" + nodes[(int) dijkstraResult[destiniesIndex][0]] + "  ");
+
+        while (destiniesIndex!=originIndex) {
+
+            System.out.print(nodes[(int) dijkstraResult[destiniesIndex][2]] + " ");
+            destiniesIndex = (int) dijkstraResult[destiniesIndex][2];
+        } //end while
+
+        System.out.println(")");
+
+    } //end showMinimumPath
     public void showGraph() {
         for (int i = 0; i<numberOfNodes;i++) {
             System.out.printf("Connections for %-4s ", nodes[i]);
             for (int j = 0; j<numberOfNodes;j++) {
-                System.out.printf("%4s:%-11f    ",nodes[j],adjacencyMatrix[i][j]);
+                System.out.printf("|%4s:%-11f|",nodes[j],adjacencyMatrix[i][j]);
             } //end for
             System.out.println();
         } //end for
